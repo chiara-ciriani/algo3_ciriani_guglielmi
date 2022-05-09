@@ -2,7 +2,6 @@
 En un double dispatch (DD), ¿qué información aporta cada uno de los dos llamados?
 
 Double dispatch es un mecanismo que despacha una llamada de función a diferentes funciones concretas.
-
 En nuestro modelo, el primer llamado ejecuta el método del receptor que recibe un colaborador desconocido para realizar cierta operación aritmética. Mientras que en el segundo llamado ahora el receptor es el colaborador y ahora, al saber su clase, realiza la implementación correspondiente del método.
 Básicamente, la idea de Double dispatch es intentar resolver la selección del método utilizando polimorfismo. Específicamente resuelve el problema de andar preguntando.
 Por ejemplo, cuando queremos sumar un objeto de la clase número al objeto Entero en lugar de que el entero le pregunte de qué clase es al número a sumar, va a llamar a un método para que se encargue directamente el número.
